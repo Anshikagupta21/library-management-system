@@ -1,0 +1,317 @@
+{
+  "books": [
+    {
+  
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "isbn": "9780061120084",
+      "category": "fiction",
+      "publicationDate": "1960-07-11",
+      "description": "A novel about honor and injustice in the deep South through the eyes of a young girl.",
+      "coverUrl": "./mockingbird.webp",
+      "status": "available",
+      "addedDate": "2023-01-15"
+    },
+    {
+      
+      "title": "1984",
+      "author": "George Orwell",
+      "isbn": "9780451524935",
+      "category": "fiction",
+      "publicationDate": "1949-06-08",
+      "description": "A dystopian novel about a totalitarian regime that manipulates and controls its citizens.",
+      "coverUrl": "./1994book.jpg",
+      "status": "borrowed",
+      "addedDate": "2023-02-20"
+    },
+    {
+      
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "isbn": "9780743273565",
+      "category": "fiction",
+      "publicationDate": "1925-04-10",
+      "description": "A tale of wealth, love, and the American Dream during the Roaring Twenties.",
+      "coverUrl": "the-great-gatsby.jpg",
+      "status": "available",
+      "addedDate": "2023-05-18"
+    },
+    {
+      
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "isbn": "9780141439518",
+      "category": "fiction",
+      "publicationDate": "1813-01-28",
+      "description": "A romantic novel of manners that follows the character development of Elizabeth Bennet.",
+      "coverUrl": "pride.jpg",
+      "status": "available",
+      "addedDate": "2023-02-14"
+    },
+    {
+      
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "isbn": "9780316769488",
+      "category": "fiction",
+      "publicationDate": "1951-07-16",
+      "description": "A novel about a teenager's experiences in New York City after being expelled from prep school.",
+      "coverUrl": "The-Catcher-in-the-Rye.jpg",
+      "status": "borrowed",
+      "addedDate": "2023-02-10"
+    },
+    {
+      
+      "title": "One Hundred Years of Solitude",
+      "author": "Gabriel García Márquez",
+      "isbn": "9780060883287",
+      "category": "fiction",
+      "publicationDate": "1967-05-30",
+      "description": "A landmark novel that tells the multi-generational story of the Buendía family in the fictional town of Macondo.",
+      "coverUrl": "100_Years.jpg.crdownload",
+      "status": "available",
+      "addedDate": "2023-06-12"
+    },
+    {
+      
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "isbn": "9780062316097",
+      "category": "non-fiction",
+      "publicationDate": "2011-02-10",
+      "description": "A book that explores the history of the human species from ancient evolution to the present.",
+      "coverUrl": "humamkind.jpg",
+      "status": "available",
+      "addedDate": "2023-03-05"
+    },
+    {
+      
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "isbn": "9780374533557",
+      "category": "non-fiction",
+      "publicationDate": "2011-10-25",
+      "description": "An exploration of the two systems that drive the way we think and make choices.",
+      "coverUrl": "thinking.webp",
+      "status": "borrowed",
+      "addedDate": "2023-04-22"
+    },
+    {
+      
+      "title": "Educated",
+      "author": "Tara Westover",
+      "isbn": "9780399590504",
+      "category": "non-fiction",
+      "publicationDate": "2018-02-20",
+      "description": "A memoir about a woman who was kept out of school as a child but went on to earn a PhD from Cambridge University.",
+      "coverUrl": "educated.webp",
+      "status": "available",
+      "addedDate": "2023-01-30"
+    },
+    {
+      
+      "title": "The Power of Habit",
+      "author": "Charles Duhigg",
+      "isbn": "9780812981605",
+      "category": "non-fiction",
+      "publicationDate": "2012-02-28",
+      "description": "Explores how habits work and how they can be changed to transform our businesses, communities, and lives.",
+      "coverUrl": "powerofhabbit.jpg",
+      "status": "available",
+      "addedDate": "2023-03-15"
+    },
+    {
+      
+      "title": "A Brief History of Time",
+      "author": "Stephen Hawking",
+      "isbn": "9780553380163",
+      "category": "science",
+      "publicationDate": "1988-04-01",
+      "description": "A book about the structure, origin, development and eventual fate of the universe.",
+      "coverUrl": "time.jpg",
+      "status": "available",
+      "addedDate": "2023-01-25"
+    },
+    {
+      
+      "title": "The Gene: An Intimate History",
+      "author": "Siddhartha Mukherjee",
+      "isbn": "9781476733500",
+      "category": "science",
+      "publicationDate": "2016-05-17",
+      "description": "A magnificent history of the gene and a response to the defining question of the future: What becomes of being human when we learn to 'read' and 'write' our own genetic information?",
+      "coverUrl": "gene.jpg",
+      "status": "borrowed",
+      "addedDate": "2023-05-10"
+    },
+    {
+      
+      "title": "Cosmos",
+      "author": "Carl Sagan",
+      "isbn": "9780345539434",
+      "category": "science",
+      "publicationDate": "1980-09-01",
+      "description": "Explores the mutual development of science and civilization, tracing the evolution of the cosmos and discussing the cosmos's fifteen-billion-year journey.",
+      "coverUrl": "cosmos.jpg",
+      "status": "available",
+      "addedDate": "2023-02-05"
+    },
+    {
+      
+      "title": "Silent Spring",
+      "author": "Rachel Carson",
+      "isbn": "9780618249060",
+      "category": "science",
+      "publicationDate": "1962-09-27",
+      "description": "Documents the adverse environmental effects caused by the indiscriminate use of pesticides.",
+      "coverUrl": "slientspring.htm",
+      "status": "available",
+      "addedDate": "2023-04-10"
+    },
+    {
+      
+      "title": "The Diary of a Young Girl",
+      "author": "Anne Frank",
+      "isbn": "9780553577129",
+      "category": "history",
+      "publicationDate": "1947-06-25",
+      "description": "The diary kept by Anne Frank while she was in hiding for two years with her family during the Nazi occupation of the Netherlands.",
+      "coverUrl": "the-diary-of-a-young-girl.webp",
+      "status": "available",
+      "addedDate": "2023-01-05"
+    },
+    {
+      
+      "title": "Guns, Germs, and Steel",
+      "author": "Jared Diamond",
+      "isbn": "9780393317558",
+      "category": "history",
+      "publicationDate": "1997-03-01",
+      "description": "Examines why some societies have advanced technologically and grew while others have not.",
+      "coverUrl": "guns.jpg",
+      "status": "borrowed",
+      "addedDate": "2023-03-22"
+    },
+    {
+      
+      "title": "The Wright Brothers",
+      "author": "David McCullough",
+      "isbn": "9781476728742",
+      "category": "history",
+      "publicationDate": "2015-05-05",
+      "description": "Chronicles the dramatic story of the Wright brothers' journey to achieve powered flight.",
+      "coverUrl": "wright.jpg",
+      "status": "available",
+      "addedDate": "2023-06-01"
+    },
+    {
+      
+      "title": "SPQR: A History of Ancient Rome",
+      "author": "Mary Beard",
+      "isbn": "9781631492228",
+      "category": "history",
+      "publicationDate": "2015-10-19",
+      "description": "A fresh look at Roman history from one of the world's foremost classicists.",
+      "coverUrl": "spqr.jpg",
+      "status": "available",
+      "addedDate": "2023-05-15"
+    },
+    {
+      
+      "title": "Steve Jobs",
+      "author": "Walter Isaacson",
+      "isbn": "9781451648539",
+      "category": "biography",
+      "publicationDate": "2011-10-24",
+      "description": "The biography of Apple co-founder Steve Jobs.",
+      "coverUrl": "stevejob.jpg",
+      "status": "available",
+      "addedDate": "2023-04-12"
+    },
+    {
+      
+      "title": "The Immortal Life of Henrietta Lacks",
+      "author": "Rebecca Skloot",
+      "isbn": "9781400052189",
+      "category": "biography",
+      "publicationDate": "2010-02-02",
+      "description": "Tells the story of Henrietta Lacks, a poor tobacco farmer whose cells were taken without her knowledge and became one of the most important tools in medicine.",
+      "coverUrl": "immortal.jpg",
+      "status": "borrowed",
+      "addedDate": "2023-02-25"
+    },
+    {
+      
+      "title": "Becoming",
+      "author": "Michelle Obama",
+      "isbn": "9781524763138",
+      "category": "biography",
+      "publicationDate": "2018-11-13",
+      "description": "The memoir of former United States First Lady Michelle Obama.",
+      "coverUrl": "becoming.jpg",
+      "status": "available",
+      "addedDate": "2023-01-10"
+    },
+    {
+      
+      "title": "Leonardo da Vinci",
+      "author": "Walter Isaacson",
+      "isbn": "9781501139154",
+      "category": "biography",
+      "publicationDate": "2017-10-17",
+      "description": "A biography of the Italian Renaissance polymath that connects his art to his science.",
+      "coverUrl": "leonardo.jpg",
+      "status": "available",
+      "addedDate": "2023-03-30"
+    },
+    {
+      
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "isbn": "9780132350884",
+      "category": "technology",
+      "publicationDate": "2008-08-11",
+      "description": "A handbook of agile software craftsmanship.",
+      "coverUrl": "cleancode.jpg",
+      "status": "borrowed",
+      "addedDate": "2023-03-20"
+    },
+    {
+      
+      "title": "The Innovators",
+      "author": "Walter Isaacson",
+      "isbn": "9781476708690",
+      "category": "technology",
+      "publicationDate": "2014-10-07",
+      "description": "How a group of hackers, geniuses, and geeks created the digital revolution.",
+      "coverUrl": "innovators.jpg",
+      "status": "available",
+      "addedDate": "2023-04-05"
+    },
+    {
+      
+      "title": "Algorithms to Live By",
+      "author": "Brian Christian & Tom Griffiths",
+      "isbn": "9781627790369",
+      "category": "technology",
+      "publicationDate": "2016-04-19",
+      "description": "How computer algorithms can be applied to our everyday lives, helping to solve common decision-making problems.",
+      "coverUrl": "alogorithms.jpg",
+      "status": "available",
+      "addedDate": "2023-02-18"
+    },
+    {
+      
+      "title": "Hooked",
+      "author": "Nir Eyal",
+      "isbn": "9781591847786",
+      "category": "technology",
+      "publicationDate": "2014-11-04",
+      "description": "How to build habit-forming products through the Hook Model: a four-step process companies use to build customer habits.",
+      "coverUrl": "hooked.jpg",
+      "status": "borrowed",
+      "addedDate": "2023-05-22"
+    }
+  ]
+  
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup-page</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <style>
+   body{
+        /* background-color: #f0f0f0; */
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+        margin: 0;
+        padding: 0;
+        overflow-y: hidden;
+        background-image: url(./LIBRARY\ IMAGE.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        backdrop-filter: blur(1px); 
+    }
+    h1{
+        text-align: center;
+    }
+    form{
+        background-color: rgba(255, 255, 255, 0.4);
+        padding: 100px;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        height: 50vh;
+        width: 60%;
+        
+    }
+    label{
+        display: block;
+        margin-bottom: 5px;
+    }
+    input{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 16px;
+        height: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        background-color: #28a745;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+    }
+    button:hover{
+        background-color: #218838;
+    }
+    p{
+      color:red;
+   }
+    </style> -->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+    background: linear-gradient(135deg, #e3f2fd 0%, #87ceeb 50%, #4a90e2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+    
+}
+
+/* Animated background elements */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(74, 144, 226, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(135, 206, 235, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 40% 30%, rgba(100, 149, 237, 0.2) 0%, transparent 50%);
+    animation: backgroundShift 15s ease-in-out infinite;
+}
+
+@keyframes backgroundShift {
+    0%, 100% { transform: translateX(0) translateY(0); }
+    25% { transform: translateX(-10px) translateY(-5px); }
+    50% { transform: translateX(10px) translateY(10px); }
+    75% { transform: translateX(-5px) translateY(5px); }
+}
+
+/* Main container */
+div[data-aos="zoom-in"] {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 
+        0 15px 30px rgba(74, 144, 226, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    border: 2px solid rgba(74, 144, 226, 0.2);
+}
+
+div[data-aos="zoom-in"]::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #4a90e2, #87ceeb, #4a90e2, #87ceeb);
+    border-radius: 18px;
+    z-index: -1;
+    animation: borderGlow 3s ease-in-out infinite;
+}
+
+@keyframes borderGlow {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+form {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(74, 144, 226, 0.1);
+    position: relative;
+}
+
+h1::after {
+    content: '📚';
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* Form groups */
+form > div {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid #87ceeb;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-family: 'Crimson Text', serif;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(74, 144, 226, 0.1);
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 
+        inset 0 2px 4px rgba(74, 144, 226, 0.1),
+        0 0 0 3px rgba(74, 144, 226, 0.2);
+    transform: translateY(-2px);
+}
+
+input[type="text"]:focus + label {
+    color: #4a90e2;
+}
+
+/* Error message styling */
+p[id^="err"] {
+    color: #dc3545 !important;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    min-height: 1.2rem;
+    display: block;
+    font-weight: 500;
+}
+
+/* Alternative selectors for error messages */
+#errname, #errnumber, #erremail, #errpass, #errcpass {
+    color: #dc3545 !important;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    min-height: 1.2rem;
+    display: block;
+    font-weight: 500;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, #4a90e2 0%, #6fa8f5 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 12px rgba(74, 144, 226, 0.3);
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+button:hover::before {
+    left: 100%;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(74, 144, 226, 0.4);
+    background: linear-gradient(135deg, #6fa8f5 0%, #4a90e2 100%);
+}
+
+button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(74, 144, 226, 0.3);
+}
+span a {
+    color: red;
+    text-decoration: none;
+    font-weight: 1000;
+    transition: color 0.3s ease;
+    font-size: 15px;
+    width: 100%;
+}
+
+/* Input validation states */
+input.valid {
+    border-color: #28a745;
+    background-color: rgba(40, 167, 69, 0.05);
+}
+
+input.invalid {
+    border-color: #dc3545;
+    background-color: rgba(220, 53, 69, 0.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    div[data-aos="zoom-in"] {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    input[type="text"] {
+        padding: 0.75rem 0.9rem;
+    }
+    
+    button {
+        padding: 0.9rem;
+        font-size: 1rem;
+    }
+}
+
+/* Loading animation for button */
+.loading {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid transparent;
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+    </style>
+</head>
+
+<body>
+  
+  <div data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+
+    <form action="">
+      <h1>Signup</h1>
+
+        <div>
+          <label>Enter name:</label>
+          <input type="text" id="name">
+          <p id="errname"></p>
+          
+        </div>
+        <div>
+           <label>Enter number: </label>
+           <input type="text" id="number">
+           <p id="errnumber"></p>
+
+         </div>
+         <div>
+          <label>Email:</label>
+           <input type="text" id="email">
+           <p id="erremail"></p>
+
+         </div>
+          
+         <div>
+          <label>Enter password:</label>
+          <input type="text" id="password"> 
+          <p id="errpass"></p>
+        </div>
+         
+        <div>
+            <label>Cpassword</label>
+            <input type="text" id="cpassword">
+            <p id="errcpass"></p>
+
+         </div>
+         <button onclick="return Signup()">Signup</button>
+
+         <!-- <input type="submit" value="Signup" onclick="return Signup()"> -->
+        <span><a href="login.html">Already have an account?</a></span>
+    </form>
+  </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="sign.js"></script>
+
+</body>
+</html>

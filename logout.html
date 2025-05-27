@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System - Logout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(./backimage.jpg);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .logout-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .logout-message {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .logout-btn {
+            background-color: #d32f2f;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        .logout-btn:hover {
+            background-color: #b71c1c;
+        }
+
+        .cancel-btn {
+            background-color: #6c757d;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        .cancel-btn:hover {
+            background-color: #545b62;
+        }
+
+        .success-message {
+            display: none;
+            color: #2e7d32;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .redirect-message {
+            display: none;
+            color: #666;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logout-container">
+        <div class="logo">📚 Library Management System</div>
+        
+        <div id="logout-confirm">
+            <div class="logout-message">
+                Are you sure you want to logout?
+            </div>
+            <button class="logout-btn" onclick="confirmLogout()">Yes, Logout</button>
+            <button class="cancel-btn" onclick="cancelLogout()">Cancel</button>
+        </div>
+
+        <div id="logout-success" class="success-message">
+            <h3>Logged out successfully!</h3>
+            <p class="redirect-message">Redirecting to login page...</p>
+        </div>
+    </div>
+
+    <script>
+        function confirmLogout() {
+            // Hide the confirmation section
+            document.getElementById('logout-confirm').style.display = 'none';
+            
+            // Show success message
+            document.getElementById('logout-success').style.display = 'block';
+            
+            // Clear any stored user data (if using)
+            // localStorage.clear(); // Uncomment if you're using localStorage
+            
+            // Redirect after 2 seconds
+            setTimeout(function() {
+                // Replace 'login.html' with your actual login page
+                window.location.href = 'login.html';
+            }, 2000);
+        }
+
+        function cancelLogout() {
+            // Go back to previous page or dashboard
+            // Replace 'dashboard.html' with your actual dashboard page
+            window.location.href = 'dashboard.html';
+        }
+
+        // Optional: Handle browser back button
+        window.onpopstate = function() {
+            window.location.href = 'dashboard.html';
+        };
+    </script>
+</body>
+</html>
